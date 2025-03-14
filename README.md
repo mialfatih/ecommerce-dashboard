@@ -17,12 +17,13 @@ Dashboard ini menampilkan visualisasi interaktif **produk terlaris dan metode pe
 
 ### 1. **Clone Repository ini**
 
-git clone https://github.com/mialfatih/ecommerce-data.git
+   git clone https://github.com/mialfatih/ecommerce-dashboard.git
 
-2. **Masuk ke folder project**
+### 2. **Masuk ke folder project**
+
    cd repo-dashboard-ecommerce
 
-3. **(Opsional) Buat Virtual Environment**
+### 3. **(Opsional) Buat Virtual Environment**
 
 **Windows**<br>
 python -m venv env
@@ -35,5 +36,11 @@ source env/bin/activate
 **Install Library yang Dibutuhkan**<br>
 pip install -r requirements.txt
 
-**Jalankan Dashbaord**
-streamlit run dashboard/dashboard.py
+### 4. **Jalankan Dashbaord**
+streamlit run dashboard/dashboard.py<br>
+
+---
+
+*Catatan*<br>
+*- Pastikan seluruh file dataset (CSV) tersedia dalam folder data/..*
+*- Bila terjadi error dan keterangan bahwa data tidak bisa dibaca, buka bagian dashboard.py dan ke bagian def load_data(): lalu tambah ../ di tiap data, contoh "../data/order_items_dataset.csv"*
