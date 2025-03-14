@@ -17,25 +17,23 @@ Dashboard ini menampilkan visualisasi interaktif **produk terlaris dan metode pe
 
 ### 1. **Clone Repository ini**
 
-bash
 git clone https://github.com/mialfatih/ecommerce-data.git
 
 2. **Masuk ke folder project**
    cd repo-dashboard-ecommerce
 
-## 📦 Instalasi Library
+3. **(Opsional) Buat Virtual Environment**
 
-### 1. **Disarankan menggunakan Virtual Environment (Opsional tetapi direkomendasikan)**
-
-**Windows**
-bash
+**Windows**<br>
 python -m venv env
 env\Scripts\activate
 
-**MacOS/Linux**
-bash
+**MacOS/Linux**<br>
 python3 -m venv env
 source env/bin/activate
 
-**install**
+**Install Library yang Dibutuhkan**<br>
 pip install -r requirements.txt
+
+**Jalankan Dashbaord**
+streamlit run dashboard/dashboard.py
